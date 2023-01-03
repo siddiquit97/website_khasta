@@ -1610,7 +1610,8 @@ margin-bottom: 20px;
 .service .service-box .hoverle a {
 	padding: 5px 30px;
 	color: #fc4311;
-   font-size: 17px;
+   font-size: 90px;
+   text-shadow: 1px 1px black;
 }
 
 .service .titlepage {
