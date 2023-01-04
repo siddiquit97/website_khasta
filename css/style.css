@@ -1918,7 +1918,7 @@ margin-bottom: 20px;
 .contact .titlepage h3 {
 	padding: 0px 0px 6px 0px;
 	font-weight: bold;
-	color: #fff;
+	color: black;
 	line-height: 46px;
 	border-bottom: #fff solid 1px;
 	font-size: 40px;
@@ -1985,7 +1985,6 @@ margin-bottom: 20px;
 }
 
 .footer .address h3 {
-	color: #fff;
 	font-size: 25px;
 	line-height: 35px;
 	font-weight: 500;
@@ -1993,7 +1992,7 @@ margin-bottom: 20px;
 }
 
 .footer .address i {
-	color: #fff;
+	color: black;
 	font-size: 15px;
 	font-weight: 500;
 }
@@ -2214,4 +2213,8 @@ font-size: 17px;}
 
 #blog img {
 	border: 2px solid black;
+}
+
+#service img {
+	border: 1px solid black;
 }
