@@ -405,23 +405,22 @@
              
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-md-3">
                   <div class="contact">
-                     
-                     <form>
+                     <form id="form" class="was-validated">
                         <div class="row">
-                           <div class="col-sm-12">
-                              <input class="contactus" placeholder="Name" type="text" name="Name">
+                           <div class="col-sm-12 form-group">
+                              <input class="contactus" placeholder="Name" type="text" name="from_name" id="from_name" required>
+                              <div class="invalid-feedback">Please fill out this field.</div>
+                           </div>
+                           <div class="col-sm-12 form-group">
+                              <input class="contactus" placeholder="Email" type="text" name="reply_to" id="reply_to" required>
+                              <div class="invalid-feedback">Please fill out this field.</div>
+                           </div>
+                           <div class="col-sm-12 form-group">
+                              <textarea class="textarea" placeholder="Message" type="text" name="message" id="message" required></textarea>
+                              <div class="invalid-feedback">Please fill out this field.</div>
                            </div>
                            <div class="col-sm-12">
-                              <input class="contactus" placeholder="Phone" type="text" name="Email">
-                           </div>
-                           <div class="col-sm-12">
-                              <input class="contactus" placeholder="Email" type="text" name="Email">
-                           </div>
-                           <div class="col-sm-12">
-                              <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                           </div>
-                           <div class="col-sm-12">
-                              <button class="send">Send</button>
+                              <button class="send" id="buttonEmail" value="Send Email">Send</button>
                            </div>
                         </div>
                      </form>
@@ -467,9 +466,6 @@
                   </div>
                </div>
             </div>
-            <!-- <div class="copyright">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
-            </div> -->
          </div>
       </footr>
       <!-- end footer -->
@@ -500,5 +496,12 @@
          });
          
       </script> 
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        emailjs.init('VrQ255HkFc0oMb7Qe')
+      </script>
+      <script src="js/sendEmail.js"></script>
    </body>
 </html>
